@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mini project</title>
+</head>
+<body>
+    <div class="w-full min-h-screen p-10 bg-zinc-900">
+        <h2 class="text-3xl mb-5 text-white">Upload Profile Pic</h2>
+            <form autocomplete="off"  action="/upload" method="post" enctype="multipart/form-data">
+            <input class="px-3 py-2 outline-none rounded-md bg-transparent border-2 border-zinc-800 text-white" name="image" type="file">
+            <input class="px-3 py-2 outline-none rounded-md bg-blue-500 border-2 border-zinc-800" value="Upload" type="submit">
+
+        </form>
+
+    </div>
+
+ 
+</body>
+</html>

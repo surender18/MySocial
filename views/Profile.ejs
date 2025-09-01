@@ -12,8 +12,16 @@
              <div class="flex justify-self-end">
                 <a class="text-white bg-red-500 p-2 rounded-md inline-block mb-2" href="/logout">logout</a>
              </div>
-            <p class="text-white text-2xl font-semibold"><span class="font-light text-3xl">Hello</span>, <%= user.username%>👋🏼</p>
-            <h5 class="text-white mb-5">You can create a new post</h5>
+             <div class="flex gap-3">
+              <div class=" w-20 h-20 overflow-hidden   rounded-lg">
+                <a href="/profile/upload">
+<img class="w-full h-full object-cover" src="/upload/images/<%= user.profilePic %>" alt="">
+                </div>
+                </a>
+                
+              <p class="text-white text-2xl self-center  font-semibold"><span class="font-light text-3xl">Hello</span>, <%= user.username%>👋🏼</p>
+             </div>
+            <h5 class="text-white mb-5 mt-3">You can create a new post</h5>
             <form method="post" action="/post">
                 <textarea placeholder="What's on your mind" class="w-1/3 mb-3 text-white resize-none p-3 bg-transparent border-2 border-zinc-700 rounded-md" name="content" id=""></textarea>
                 <input class=" w-36 p-3 rounded-md text-white block bg-blue-500"  value="Publish new post" type="submit">
